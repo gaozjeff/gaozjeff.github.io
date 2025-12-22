@@ -7,19 +7,22 @@ body {
 
 .header-container {
   display: flex;
-  align-items: stretch;
-  gap: 20px;
+  align-items: center;   /* aligns text vertically center relative to image */
+  gap: 20px;             /* horizontal space between image and text */
 }
 
 .header-text {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  flex-direction: column; /* stack name and links */
 }
 
 .header-text h1,
 .header-links {
   margin: 0;
+}
+
+.header-links {
+  margin-top: 8px; /* keeps previous spacing between name and links */
 }
 
 /* header { */

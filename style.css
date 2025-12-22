@@ -13,16 +13,13 @@ body {
 
 .header-text {
   display: flex;
-  flex-direction: column; /* stack name and links */
-}
-
-.header-text h1,
-.header-links {
-  margin: 0;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 150px; /* same as profile image */
 }
 
 .header-links {
-  margin-top: 8px; /* keeps previous spacing between name and links */
+  margin-top: 0;
 }
 
 /* header { */

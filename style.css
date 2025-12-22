@@ -16,6 +16,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   height: 150px; /* same as profile image */
+  padding: 10px 0;
 }
 
 .header-links {

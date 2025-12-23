@@ -44,7 +44,6 @@
         Our group identified a problematic sidewalk on campus crossing Springfield Ave. between Bardeen quad and North quad due to heavy pedestrian and vehicle traffic. 
         We proposed constructing an underground pedestrian tunnel connecting Grainger Engineering Library and Digital Computer Lab to make crossing for pedestrians safer and make the road above more efficient instead of the current stop-and-go traffic. 
       </p>
-      <a href="projects/project1.html">View project</a> |
       <a href="pdfs/cee190.pdf">PDF Report</a>
     </li>
 
@@ -63,27 +62,32 @@
         We also completed a basic SketchUp model of the building and the exterior including two more surrounding  buildings and the main quad. 
         Finally, at the end of our report we included all the printed and annotated sheets for reference and comparison with the actual sheets 
       </p>
-      <a href="projects/project2.html">View project</a> |
+      <a href="https://https://viewer.autodesk.com/">View 3D Revit Model</a> | <!-- add the link in once you get that figured out on windows machine-->
       <a href="pdfs/se101.pdf">PDF Report</a>
     </li>
 
     <li>
       <h3>Traffic Engineering Network Flow Optimization</h3>
       <p>
-        Given the scenario where everybody tries to immediately leave a home basketball game at the University of Illinois, we were tasked with modeling several different scenarios about traffic flow. 
+        The Traffic Engineering Network Flow project was assigned in our Systems Engineering and Economic class. We were given the scenario where everybody tries to immediately leave a home basketball game at the University of Illinois, we were tasked with modeling several different scenarios about traffic flow. 
         For the first scenario we assumed that all roads have infinite capacity and drivers want to minimize their travel distance. Our subtasks included weighting east and west exits to model higher flow towards the cities of Champaign and Urbana and closing a parking lot to see what difference it would make on the flow of traffic.  
-        For the second task we modeled what would happen if we increased the parking lot demand by 20% out of one of a given parking lot. 
-        ***
+        For the second task we modeled what would happen if we increased the parking lot demand by 20% out of one of a given parking lot. Our third task had us model the network now accounting for road capacity. In order to do this we utilized Google Maps satellite imagery to count the number of lanes for each road in the network
+        and assumed a static value of 450 cars per hour per lane. We modelled this by creating a list of lanes for each link and then assigning them the static value of cars per hour per lane. Our fourth and final task had us model how the network would change from the addition of one lane. We wanted to determine the economic feasibility 
+        of the addition of one or even two lanes on a given link. 
       </p>
-      <a href="projects/project3.html">View project</a> |
+      <a href="projects/project3.html">View project</a> | <!-- try to add runnable python code for this? -->
       <a href="pdfs/cee201.pdf">PDF Report</a>
     </li>
 
     <li>
       <h3>Statistical Analysis of Water Discharge and Gage Height</h3>
-      <p>Short description.</p>
-      <a href="projects/project4.html">View project</a> |
-      <a href="pdfs/cee202.pdf">PDF Report</a>
+      <p>
+        Our Engineering Risk and Uncertainty class project was to analyze whether there was a statistical correlation between our given data sets. Our group worked with a set of USGS data on Boneyard Creek, a tributary of the Vermillion River in Illinois, which has had historic flooding problems. 
+        Using USGS data we wanted to test the null hypothesis that there was a linear regression between the measured amount of water discharge in cubic feet and the measured gage height from the measuring station along the creek. Using R, we imported the CSV file containing data from 1992 and began to analyze it. 
+        First we created summary tables of different statistics such as mean and standard deviation for each variable; while also making sure to take into account two-variable statistics such as covariance. We then plotted some of our data including a scatterplot of our data. 
+        After creating a basic scatterplot of our data we noticed outliers and filtered our CSV to only include gage heights that fell within a specific range correlating to a specific time period of measurement. Our R^2 value came out to 0.645 indicating a linear relationship. 
+      </p>
+      <a href="pdfs/cee202.pdf">PDF Report</a> | 
       <a href="pdfs/cee202(1).pdf">RMD File (PDF)</a>
     </li>
   </ul>

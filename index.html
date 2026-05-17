@@ -37,17 +37,44 @@
 
   <ul>
     <li>
-      <h3>Intro to Civil Engineering Feasibility Study</h3>
+      <h3>2-D Structural Analysis of Truss Bridge <span style="font-size: 1rem; font-weight: normal; color: gray;">April 2026</span></h3>
       <p>
-        For our Intro Civil Engineering Class we were tasked with identifying an issue on campus and creating a feasibility study on whether our proposed solution could work. 
-        Our group identified a problematic sidewalk on campus crossing Springfield Ave. between Bardeen quad and North quad due to heavy pedestrian and vehicle traffic. 
-        We proposed constructing an underground pedestrian tunnel connecting Grainger Engineering Library and Digital Computer Lab to make crossing for pedestrians safer and make the road above more efficient instead of the current stop-and-go traffic. 
+        For our Structural Engineering class we were tasked with modeling and calculating the displacements and forces in a two-dimensional truss bridge subjected to three downward point loads. We used three different methods to calculate and verify our results: the principle of virtual work, SAP2000, and python. 
+        The applied load was three downward point loads of 10 kips each at the three bottom joints between the two supports. The principle of virtual work method was calculated by hand where we determined the axial forces in all the members and the displacement at the joint in the middle of the span. 
+        In SAP2000 we modeled the entire structure making assumptions of zero member weight to better align with our by hand and python results. We modeled the bridge as using A992 steel in W 16x89 beams. Once we modeled the truss in SAP2000, we plotted the deformed shape, all the member axial forces, shear forces, and moments; additionally we calculated the displacement at every joint before compiling all the results into two sets of tables. 
+        Lastly was our python method. To begin, we started by writing the displacement transformation matrix for each individual member. We then wrote the stiffness matrices for each member before comining them all into one large global stiffness matrix. 
+        Now that we had assembled the components of our stiffness matrix we solved for the internal forces and joint displacements and checked with our previous two methods. While the numbering systems for DOFs varied between our methods, our final results aligned with one another pretty precisely. 
       </p>
-      <a href="pdfs/cee190.pdf">View PDF Report</a>
+      <a href="pdfs/cee360.pdf">View PDF Report</a>
     </li>
 
     <li>
-      <h3>Revit Model of Literatures, Cultures and Languages Building</h3>
+      <h3>Traffic Engineering Network Flow Optimization <span style="font-size: 1rem; font-weight: normal; color: gray;">December 2025</span></h3>
+      <p>
+        The Traffic Engineering Network Flow project was assigned in our Systems Engineering and Economic class. We were given the scenario where everybody tries to immediately leave a home basketball game at the University of Illinois, we were tasked with modeling several different scenarios about traffic flow. 
+        For the first scenario we assumed that all roads have infinite capacity and drivers want to minimize their travel distance. Our subtasks included weighting east and west exits to model higher flow towards the cities of Champaign and Urbana and closing a parking lot to see what difference it would make on the flow of traffic.  
+        For the second task we modeled what would happen if we increased the parking lot demand by 20% out of one of a given parking lot. Our third task had us model the network now accounting for road capacity. In order to do this we utilized Google Maps satellite imagery to count the number of lanes for each road in the network
+        and assumed a static value of 450 cars per hour per lane. We modelled this by creating a list of lanes for each link and then assigning them the static value of cars per hour per lane. Our fourth and final task had us model how the network would change from the addition of one lane. We wanted to determine the economic feasibility 
+        of the addition of one or even two lanes on a given link. 
+      </p>
+      <a href="projects/project3.html">View project</a> | <!-- try to add runnable python code for this? -->
+      <a href="pdfs/cee201.pdf">PDF Report</a>
+    </li>
+
+    <li>
+      <h3>Statistical Analysis of Water Discharge and Gage Height <span style="font-size: 1rem; font-weight: normal; color: gray;">December 2025</span></h3>
+      <p>
+        Our Engineering Risk and Uncertainty class project was to analyze whether there was a statistical correlation between our given data sets. Our group worked with a set of USGS data on Boneyard Creek, a tributary of the Vermillion River in Illinois, which has had historic flooding problems. 
+        Using USGS data we wanted to test the null hypothesis that there was a linear regression between the measured amount of water discharge in cubic feet and the measured gage height from the measuring station along the creek. Using R, we imported the CSV file containing data from 1992 and began to analyze it. 
+        First we created summary tables of different statistics such as mean and standard deviation for each variable; while also making sure to take into account two-variable statistics such as covariance. We then plotted some of our data including a scatterplot of our data. 
+        After creating a basic scatterplot of our data we noticed outliers and filtered our CSV to only include gage heights that fell within a specific range correlating to a specific time period of measurement. Our R^2 value came out to 0.645 indicating a linear relationship. 
+      </p>
+      <a href="pdfs/cee202.pdf">View PDF Report</a> | 
+      <a href="pdfs/cee202(1).pdf">View RMD File (PDF)</a>
+    </li>
+
+    <li>
+      <h3>Revit Model of Literatures, Cultures and Languages Building <span style="font-size: 1rem; font-weight: normal; color: gray;">May 2025</span></h3>
       <p>
         In our CAD Graphics and Design course our final project consisted of taking building plans for a given building and modeling the building in Revit. 
         For the first part of our project, we established the grids and levels of our project following the historical building plans to that we would have a baseline to go off for the rest of the model. 
@@ -66,29 +93,15 @@
     </li>
 
     <li>
-      <h3>Traffic Engineering Network Flow Optimization</h3>
+      <h3>Intro to Civil Engineering Feasibility Study <span style="font-size: 1rem; font-weight: normal; color: gray;">December 2024</span></h3>
       <p>
-        The Traffic Engineering Network Flow project was assigned in our Systems Engineering and Economic class. We were given the scenario where everybody tries to immediately leave a home basketball game at the University of Illinois, we were tasked with modeling several different scenarios about traffic flow. 
-        For the first scenario we assumed that all roads have infinite capacity and drivers want to minimize their travel distance. Our subtasks included weighting east and west exits to model higher flow towards the cities of Champaign and Urbana and closing a parking lot to see what difference it would make on the flow of traffic.  
-        For the second task we modeled what would happen if we increased the parking lot demand by 20% out of one of a given parking lot. Our third task had us model the network now accounting for road capacity. In order to do this we utilized Google Maps satellite imagery to count the number of lanes for each road in the network
-        and assumed a static value of 450 cars per hour per lane. We modelled this by creating a list of lanes for each link and then assigning them the static value of cars per hour per lane. Our fourth and final task had us model how the network would change from the addition of one lane. We wanted to determine the economic feasibility 
-        of the addition of one or even two lanes on a given link. 
+        For our Intro Civil Engineering Class we were tasked with identifying an issue on campus and creating a feasibility study on whether our proposed solution could work. 
+        Our group identified a problematic sidewalk on campus crossing Springfield Ave. between Bardeen quad and North quad due to heavy pedestrian and vehicle traffic. 
+        We proposed constructing an underground pedestrian tunnel connecting Grainger Engineering Library and Digital Computer Lab to make crossing for pedestrians safer and make the road above more efficient instead of the current stop-and-go traffic. 
       </p>
-      <a href="projects/project3.html">View project</a> | <!-- try to add runnable python code for this? -->
-      <a href="pdfs/cee201.pdf">PDF Report</a>
+      <a href="pdfs/cee190.pdf">View PDF Report</a>
     </li>
-
-    <li>
-      <h3>Statistical Analysis of Water Discharge and Gage Height</h3>
-      <p>
-        Our Engineering Risk and Uncertainty class project was to analyze whether there was a statistical correlation between our given data sets. Our group worked with a set of USGS data on Boneyard Creek, a tributary of the Vermillion River in Illinois, which has had historic flooding problems. 
-        Using USGS data we wanted to test the null hypothesis that there was a linear regression between the measured amount of water discharge in cubic feet and the measured gage height from the measuring station along the creek. Using R, we imported the CSV file containing data from 1992 and began to analyze it. 
-        First we created summary tables of different statistics such as mean and standard deviation for each variable; while also making sure to take into account two-variable statistics such as covariance. We then plotted some of our data including a scatterplot of our data. 
-        After creating a basic scatterplot of our data we noticed outliers and filtered our CSV to only include gage heights that fell within a specific range correlating to a specific time period of measurement. Our R^2 value came out to 0.645 indicating a linear relationship. 
-      </p>
-      <a href="pdfs/cee202.pdf">View PDF Report</a> | 
-      <a href="pdfs/cee202(1).pdf">View RMD File (PDF)</a>
-    </li>
+    
   </ul>
   </section>
 
